@@ -120,22 +120,22 @@ def decisao_2_2():
     )
     return decisao
 
-def vitoria_1:
+def vitoria_1():
     """ vacinas só para trabalhadoras(es) """
     pass
-def vitoria_2:
+def vitoria_2():
     """ vacinas para todo mundo """
     pass
-def derrota_1:
+def derrota_1():
     """ perder o apoio popular """
     pass
-def derrota_2:
+def derrota_2():
     """ aliança com os coroneis """
     pass
-def derrota_3:
+def derrota_3():
     """ o grupo morrer """
     pass
-def derrota_4:
+def derrota_4():
     """  """
     pass
 #---------------------------------------------------------------ENREDO DE FÁTIMA
