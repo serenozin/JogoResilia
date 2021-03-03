@@ -18,7 +18,8 @@ def inicio():
     enfermeira no Hospital Elizabete Altino Teixeira vem desconfiando 
     disso há um tempo, e resolveu compartilhar sua teoria com suas amigas 
     Sandino, a ativista; e Jurema, a encantada. Para você ganhar o jogo a 
-    comunidade precisa ter acesso integral à vacina.
+    comunidade precisa ter acesso integral à vacina. Incluencie o grupo para
+    tomar as melhores decisões, que lhe levarão à vitória.
     """)
 
         menu_iniciar = int(input(f"""
@@ -119,6 +120,24 @@ def decisao_2_2():
     )
     return decisao
 
+def vitoria_1:
+    """ vacinas só para trabalhadoras(es) """
+    pass
+def vitoria_2:
+    """ vacinas para todo mundo """
+    pass
+def derrota_1:
+    """ perder o apoio popular """
+    pass
+def derrota_2:
+    """ aliança com os coroneis """
+    pass
+def derrota_3:
+    """ o grupo morrer """
+    pass
+def derrota_4:
+    """  """
+    pass
 #---------------------------------------------------------------ENREDO DE FÁTIMA
 def f0():
     texto("""
