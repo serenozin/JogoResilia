@@ -19,9 +19,9 @@ tomar as melhores decisões, que lhe levarão à vitória.
 
 ### Cenários:
 
-- Hospital Elizabete Altino Teixeira
+- Hospital [Elizabete Altino Teixeira](https://pt.wikipedia.org/wiki/Elizabeth_Altino_Teixeira)
 - Quintal da Jurema
-- Memorial das Heroínas de Tejucupapo
+- Memorial das [Heroínas de Tejucupapo](https://pt.wikipedia.org/wiki/Batalha_de_Tejucupapo)
 
 ### Condições de Vitória: 
 
