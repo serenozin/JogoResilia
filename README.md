@@ -36,7 +36,7 @@ tomar as melhores decisões, que lhe levarão à vitória.
 - Morrer
 
 ### Como jogar:
-Clone esse repositório e rode na sua máquina, ou  clique [aqui](https://repl.it/join/qsqxiedo-serenozin) para jogar via Repl.it!
+Clone esse repositório e rode na sua máquina, ou  clique [aqui](https://repl.it/talk/share/JogoResilia/126593) para jogar via Repl.it!
 # Fluxograma 
 ![Fluxograma](fluxograma.jpg)
 
