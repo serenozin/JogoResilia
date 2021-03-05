@@ -21,7 +21,7 @@ def inicio():
     comunidade precisa ter acesso integral à vacina. Incluencie o grupo para
     tomar as melhores decisões, que lhe levarão à vitória.""")
 
-        menu_iniciar = int(input(f"""
+        menu = int(input(f"""
     {"="*80}
     Digite:
     [1] para INICIAR o jogo
@@ -29,13 +29,35 @@ def inicio():
     {"="*80}
     > """))
 
-        if menu_iniciar == 1:
+        if menu == 1:
             entrada_0()
-        if menu_iniciar == 2:
+        if menu == 2:
             laco = False
         else:
             invalid()
             inicio()
+
+def final():
+    laco = True
+    while laco == True:
+
+        menu = int(input(f"""
+    {"="*80}
+    Digite:
+    [1] para INICIAR o jogo novamente
+    [2] para SAIR 
+    {"="*80}
+    > """))
+
+        if menu == 1:
+            entrada_0()
+        if menu == 2:
+            laco = False
+        else:
+            invalid()
+            final()
+        
+
 #----------------------------------------------------------------FUNÇÕES BÁSICAS
 def escolha(verbo, opcao1, opcao2):
     decisao = int(input(f"""
@@ -50,7 +72,7 @@ def escolha(verbo, opcao1, opcao2):
 def invalid():
     print(f"""
     {"="*80} 
-    {"="*25} Opção inválida. Tente novamente {"="*24}
+    {"="*24} Opção inválida. Tente novamente {"="*23}
     {"="*80}""")
 
 def game_over():
@@ -62,7 +84,7 @@ def game_over():
 def win():
     print(f"""
     {"="*80} 
-    {"="*35} VITÓRIA!!! {"="*35}
+    {"="*34} VITÓRIA!!! {"="*34}
     {"="*80} 
     """)
 
@@ -184,7 +206,7 @@ def trabalhadoras_1():
     de verdade. Com excessão dos aliados dos coronéis, que não são
     trabalhadores.
     {"="*80}""")
-    inicio()
+    final()
 
 def trabalhadoras_2():
     """ VITÓRIA: vacinas só para trabalhadoras(es) """
@@ -198,7 +220,7 @@ def trabalhadoras_2():
     de verdade. Com excessão dos aliados dos coronéis, que não são
     trabalhadores.
     {"="*80}""")
-    inicio()
+    final()
 
 def todos_1():
     """ VITÓRIA: vacinas para todo mundo """
@@ -211,7 +233,7 @@ def todos_1():
     vacinas.
     Você ganhou, a comunidade inteira terá acesso à vacina de verdade.
     {"="*80}""")
-    inicio()
+    final()
 
 def todos_2(personagem):
     """ VITÓRIA: vacinas para todo mundo """
@@ -224,7 +246,7 @@ def todos_2(personagem):
     encantados, e vocês conseguem sair salvas levando as vacinas.
     Você ganhou, a comunidade inteira terá acesso à vacina de verdade.
     {"="*80}""")
-    inicio()
+    final()
 
 def perde_apoio():
     """ DERROTA: perder o apoio popular """
@@ -235,7 +257,7 @@ def perde_apoio():
     a população, com medo, acreditou nos aliados.
     Você perdeu, a população vai continuar recebendo placebo.
     {"="*80}""")
-    inicio()
+    final()
 
 def alianca():
     """ DERROTA: aliança com os coroneis """
@@ -246,7 +268,7 @@ def alianca():
     firmada uma aliança com os coronéis para dá vacinas para a comunidade.
     Você perdeu, a população vai continuar recebendo placebo.
     {"="*80}""")
-    inicio()
+    final()
 
 def morre():
     """ DERROTA: o grupo morre """
@@ -256,7 +278,7 @@ def morre():
     no flagra, e matam vocês.
     Você perdeu, a população vai continuar recebendo placebo.
     {"="*80}""")
-    inicio()
+    final()
 
 def ignorancia():
     """ DERROTA: ignorância """
@@ -266,7 +288,7 @@ def ignorancia():
     para Fátima e dizem que sua teoria não faz sentido. 
     Você perdeu, a população vai continuar recebendo placebo.
     {"="*80}""")
-    inicio()
+    final()
 
 #---------------------------------------------------------------ENREDO DE FÁTIMA
 def f0():
@@ -497,6 +519,7 @@ def j1_2():
 
 # INÍCIO DO JOGO
 inicio()
+
 
 
 
