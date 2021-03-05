@@ -51,7 +51,21 @@ def escolha(verbo, opcao1, opcao2):
 def invalid():
     print(f"""
     {"="*80} 
-    {"="*24} Opção inválida. Tente novamente {"="*23}
+    {"="*25} Opção inválida. Tente novamente {"="*24}
+    {"="*80} 
+    """)
+
+def game_over():
+    print(f"""
+    {"="*80} 
+    {"="*35} GAME OVER {"="*36}
+    {"="*80} 
+    """)
+
+def win():
+    print(f"""
+    {"="*80} 
+    {"="*35} VITÓRIA!!! {"="*35}
     {"="*80} 
     """)
 
@@ -161,23 +175,30 @@ def decisao_2_2():
     )
     return decisao
 
-def vitoria_1():
+def trabalhadoras():
     """ vacinas só para trabalhadoras(es) """
+    win()
     pass
-def vitoria_2():
+def todos():
     """ vacinas para todo mundo """
+    win()
     pass
-def derrota_1():
+def perde_apoio():
     """ perder o apoio popular """
+    game_over()
     pass
-def derrota_2():
+def alianca():
     """ aliança com os coroneis """
+    game_over()
     pass
-def derrota_3():
+def morre():
     """ o grupo morrer """
+    game_over()
     pass
-def derrota_4():
+def ignorancia():
     """ ignorância """
+    game_over()
+
     pass
 #---------------------------------------------------------------ENREDO DE FÁTIMA
 def f0():
@@ -207,16 +228,16 @@ def f2():
 
 def f2_1():
     decisao = decisao_2_1()
-    if decisao == 1: f2_1_1()
-    elif decisao == 2: f2_1_2()
+    if decisao == 1: alianca()
+    elif decisao == 2: perde_apoio()
     else:
         invalid()
         f2_1()
 
 def f2_2():
     decisao = decisao_2_2()
-    if decisao == 1: f2_2_1()
-    elif decisao == 2: f2_2_2()
+    if decisao == 1: trabalhadoras()
+    elif decisao == 2: morre()
     else:
         invalid()
         f2_2()
@@ -248,8 +269,8 @@ def f1_1():
     "ir atrás das suas amigas"
     )
     
-    if decisao == 1: f1_1_1()
-    elif decisao == 2: f1_1_2()
+    if decisao == 1: perde_apoio()
+    elif decisao == 2: todos()
     else:
         invalid()
         f1_1()
@@ -265,8 +286,8 @@ def f1_2():
     "convocar reunião do hospital",
     "ir atrás das suas amigas"
     )
-    if decisao == 1: f1_2_1()
-    elif decisao == 2: f1_2_2()
+    if decisao == 1: perde_apoio()
+    elif decisao == 2: todos()
     else:
         invalid()
         f1_2()
@@ -290,16 +311,16 @@ def s2():
 
 def s2_1():
     decisao = decisao_2_1()
-    if decisao == 1: s2_1_1()
-    elif decisao == 2: s_1_2()
+    if decisao == 1: alianca()
+    elif decisao == 2: perde_apoio()
     else:
         invalid()
         s2_1()
 
 def s2_2():
     decisao = decisao_2_2()
-    if decisao == 1: s2_2_1()
-    elif decisao == 2: s2_2_2()
+    if decisao == 1: trabalhadoras()
+    elif decisao == 2: morre()
     else:
         invalid()
         s2_2()
@@ -324,8 +345,8 @@ def s1_1():
     "ignorância abençoada"
     )
     
-    if decisao == 1: s1_1_1()
-    elif decisao == 2: s1_1_2()
+    if decisao == 1: todos()
+    elif decisao == 2: ignorancia()
     else:
         invalid()
         s1_1()
@@ -333,8 +354,8 @@ def s1_1():
 def s1_2():
     decisao = decisao_1_2
     
-    if decisao == 1: s1_2_1()
-    elif decisao == 2: s1_2_2()
+    if decisao == 1: trabalhadoras()
+    elif decisao == 2: perde_apoio()
     else:
         invalid()
         s1_2()
@@ -359,16 +380,16 @@ def j2():
 
 def j2_1():
     decisao = decisao_2_1()
-    if decisao == 1: j2_1_1()
-    elif decisao == 2: j_1_2()
+    if decisao == 1: alianca()
+    elif decisao == 2: perde_apoio()
     else:
         invalid()
         j2_1()
 
 def j2_2():
     decisao = decisao_2_2()
-    if decisao == 1: j2_2_1()
-    elif decisao == 2: j2_2_2()
+    if decisao == 1: trabalhadoras()
+    elif decisao == 2: morre()
     else:
         invalid()
         j2_2()
@@ -392,16 +413,16 @@ def j1_1():
     "abraçar a verdade",
     "ignorância abençoada"
     )
-    if decisao == 1: j1_1_1()
-    elif decisao == 2: j1_1_2()
+    if decisao == 1: todos()
+    elif decisao == 2: ignorancia()
     else:
         invalid()
         j1_1()
 
 def j1_2():
     decisao = decisao_1_2()
-    if decisao == 1: j1_2_1()
-    elif decisao == 2: j1_2_2()
+    if decisao == 1: trabalhadoras()
+    elif decisao == 2: perde_apoio()
     else:
         invalid()
         j1_2()
