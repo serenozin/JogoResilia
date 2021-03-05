@@ -37,7 +37,10 @@ tomar as melhores decisões, que lhe levarão à vitória.
 
 ### Como jogar:
 Clone esse repositório e rode na sua máquina, ou  clique [aqui](https://repl.it/talk/share/JogoResilia/126593) para jogar via Repl.it!
-# Fluxograma 
+# Fluxograma
+
+<iframe height="400px" width="100%" src="https://repl.it/@serenozin/JogoResilia?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
 ![Fluxograma](fluxograma.jpg)
 
 ## CONFIRA OS OUTROS PROJETOS DO GRUPO 6
