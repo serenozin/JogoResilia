@@ -11,3 +11,7 @@ Sandino, a ativista; e Jurema, a encantada. Para você ganhar o jogo a
 comunidade precisa ter acesso integral à vacina. Incluencie o grupo para
 tomar as melhores decisões, que lhe levarão à vitória.
 
+
+# Fluxograma 
+![Fluxograma](fluxograma.jpg)
+
