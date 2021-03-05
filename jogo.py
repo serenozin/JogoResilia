@@ -81,11 +81,52 @@ def entrada_0():
         invalid()
         entrada_0() 
 
-def decisao_2():
-    """vão todas juntas"""
+def decisao_0(companheira):
+    texto(f"""
+    O que Fátima contou faz você e {companheira} começarem a ligar os pontos. Já corria 
+    algumas histórias pela comunidade, e agora tudo faz sentido. Vocês decidem 
+    investigar no latifúndio do Palhaço Junior, líder dos coroneis. Mas Fátima 
+    fica em dúvida se ela fica no hospital para não levantar suspeita, ou se vai 
+    com vocês.
+    """)
+    decisao = escolha(
+        "sugere",
+        "que Fátima fique no hospital", 
+        "que Fátima vá com vocês"
+    )
+    return decisao
+
+def decisao_1(quintal):
     texto("""
+    Fátima fica no hospital e vocês vão à casa do Palhaço, veem vários freezers, e 
+    duas enfermeiras do hospital. Vão para o quintal {quintal} e conversam sobre o
+    que fazer, e ficam em dúvida se devem contar para alguém agora. Ou se devem
+    pensar mais um pouco, tomar um chá.
+    """)
+    decisao = escolha(
+    "sugere",
+    "tomar um chá",
+    "contar para algumas pessoas"
+    )
+    return decisao
+
+def decisao_1_2():
+    texto("""
+    Vocês concordam em contar para algumas pessoas. Mas será que é melhor contar
+    só para algumas pesssoas que irão ajudar a pensar no que fazer ou divulgar 
+    para geral?
+    """)
+    decisao = escolha(
+    "sugere",
+    "contar só para algumas pessoas",
+    "divulgar para a comunidade interia"
+    )
+
+def decisao_2(quintal):
+    """vão todas juntas"""
+    texto(f"""
     Vocês chegam na casa do Palhaço, veem vários freezers, e duas enfermeiras do 
-    hospital. Vão para o quintal de Jurema e conversam sobre o que fazer, mas ficam 
+    hospital. Vão para o quintal {quintal} e conversam sobre o que fazer, mas ficam 
     em dúvida sobre dois caminhos a seguir. 
     """)
     decisao = escolha(
@@ -115,8 +156,8 @@ def decisao_2_2():
     """)
     decisao = escolha(
     "sugere",
-    "pegar as armas do memorial",
-    "ir sem armas"
+    "buscar sabedoria no memorial das Heróinas de Tejucupapo",
+    "pegar durante a madrugada"
     )
     return decisao
 
@@ -136,7 +177,7 @@ def derrota_3():
     """ o grupo morrer """
     pass
 def derrota_4():
-    """  """
+    """ ignorância """
     pass
 #---------------------------------------------------------------ENREDO DE FÁTIMA
 def f0():
@@ -157,7 +198,7 @@ def f0():
         f0()
 
 def f2():
-    decisao = decisao_2()
+    decisao = decisao_2("de Jurema")
     if decisao == 1: f2_1()
     elif decisao == 2: f2_2()
     else:
@@ -230,20 +271,9 @@ def f1_2():
         invalid()
         f1_2()
 
-#--------------------------------------------------------------ENREDO DE SANDINO
+# #--------------------------------------------------------------ENREDO DE SANDINO
 def s0():
-    texto("""
-    O que Fátima contou faz você e Jurema começarem a ligar os pontos. Já corria 
-    algumas histórias pela comunidade, e agora tudo faz sentido. Vocês decidem 
-    investigar no latifúndio do Palhaço Junior, líder dos coroneis. Mas Fátima 
-    fica em dúvida se ela fica no hospital para não levantar suspeita, ou se vai 
-    com vocês.
-    """)
-    decisao = escolha(
-        "sugere",
-        "que Fátima fique no hospital", 
-        "que Fátima vá com vocês"
-    )
+    decisao = decisao_0("Jurema")
     if decisao == 1: s1()
     elif decisao == 2: s2()
     else:
@@ -251,7 +281,7 @@ def s0():
         s0()
 
 def s2():
-    decisao = decisao_2()
+    decisao = decisao_2("de Jurema")
     if decisao == 1: s2_1()
     elif decisao == 2: s2_2()
     else:
@@ -275,51 +305,106 @@ def s2_2():
         s2_2()
 
 def s1():
-    texto("""
-    
-    """)
-    decisao1 = escolha(
-    "seguir",
-    "investigar calada",
-    "contar para alguns colegas"
-    )
-    if decisao1 == 1: s1_1()
-    elif decisao1 == 2: s1_2()
+    decisao = decisao_1("de Jurema")
+    if decisao == 1: s1_1()
+    elif decisao == 2: s1_2()
     else:
         invalid()
         s1()
 
 def s1_1():
     texto("""
-    
+    Jurema concorda e vocês vão tomar um chá. Jurema ganhou dois chás novos da
+    Cabocla de pena, um é para abraçar a verdade, e o outro é para ignorância 
+    abençoada.
     """)
-    decisao1_1 = escolha(
-    "faz",
-    "confrontá-los",
-    "ir atrás das suas amigas"
+    decisao = escolha(
+    "deseja tomar",
+    "abraçar a verdade",
+    "ignorância abençoada"
     )
     
-    if decisao1_1 == 1: s1_1_1()
-    elif decisao1_1 == 2: s1_1_2()
+    if decisao == 1: s1_1_1()
+    elif decisao == 2: s1_1_2()
     else:
         invalid()
         s1_1()
 
 def s1_2():
-    texto("""
+    decisao = decisao_1_2
     
-    """)
-    decisao1_2 = escolha(
-    "faz",
-    "convocar reunião do hospital",
-    "ir atrás das suas amigas"
-    )
-    
-    if decisao1_2 == 1: s1_2_1()
-    elif decisao1_2 == 2: s1_2_2()
+    if decisao == 1: s1_2_1()
+    elif decisao == 2: s1_2_2()
     else:
         invalid()
         s1_2()
+
+#--------------------------------------------------------------ENREDO DE JUREMA
+
+def j0():
+    decisao = decisao_0("Sandino")
+    if decisao == 1: j1()
+    elif decisao == 2: j2()
+    else:
+        invalid()
+        j0()
+
+def j2():
+    decisao = decisao_2("da sua casa")
+    if decisao == 1: j2_1()
+    elif decisao == 2: j2_2()
+    else:
+        invalid()
+        j2()
+
+def j2_1():
+    decisao = decisao_2_1()
+    if decisao == 1: j2_1_1()
+    elif decisao == 2: j_1_2()
+    else:
+        invalid()
+        j2_1()
+
+def j2_2():
+    decisao = decisao_2_2()
+    if decisao == 1: j2_2_1()
+    elif decisao == 2: j2_2_2()
+    else:
+        invalid()
+        j2_2()
+
+def j1():
+    decisao = decisao_1("da sua casa")
+    if decisao == 1: j1_1()
+    elif decisao == 2: j1_2()
+    else:
+        invalid()
+        j1()
+
+def j1_1():
+    texto("""
+    Sandino concorda e vocês vão tomar um chá. Você ganhou dois chás novos da
+    Cabocla de pena, um é para abraçar a verdade, e o outro é para ignorância 
+    abençoada.
+    """)
+    decisao = escolha(
+    "deseja tomar",
+    "abraçar a verdade",
+    "ignorância abençoada"
+    )
+    if decisao == 1: j1_1_1()
+    elif decisao == 2: j1_1_2()
+    else:
+        invalid()
+        j1_1()
+
+def j1_2():
+    decisao = decisao_1_2()
+    if decisao == 1: j1_2_1()
+    elif decisao == 2: j1_2_2()
+    else:
+        invalid()
+        j1_2()
 
 # INÍCIO DO JOGO
 inicio()
