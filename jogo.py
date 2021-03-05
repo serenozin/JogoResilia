@@ -213,11 +213,15 @@ def todos_1():
     {"="*80}""")
     inicio()
 
-def todos_2():
+def todos_2(personagem):
     """ VITÓRIA: vacinas para todo mundo """
     win()
     print(f"""
-    
+    Vocês tomam o chá de abraçar a verdade, e um sentimento de que tudo vai dar certo
+    toma conta de vocês. Vocês vão até o latifúndio do Palhaço para pegar as vacinas.
+    Os capangas do coronel pegam vocês no flagra, resgatando as vacinas. Mas de 
+    repente {personagem} se transforma na Cumade Fulôzinha, os capangas ficam
+    encantados, e vocês conseguem sair salvas levando as vacinas.
     Você ganhou, a comunidade inteira terá acesso à vacina de verdade.
     {"="*80}""")
     inicio()
@@ -334,7 +338,7 @@ def f1_1():
     )
     
     if decisao == 1: perde_apoio()
-    elif decisao == 2: todos()
+    elif decisao == 2: todos_1()
     else:
         invalid()
         f1_1()
@@ -351,7 +355,7 @@ def f1_2():
     "ir atrás das suas amigas"
     )
     if decisao == 1: perde_apoio()
-    elif decisao == 2: todos()
+    elif decisao == 2: todos_1()
     else:
         invalid()
         f1_2()
@@ -409,7 +413,7 @@ def s1_1():
     "ignorância abençoada"
     )
     
-    if decisao == 1: todos()
+    if decisao == 1: todos_2("Jurema")
     elif decisao == 2: ignorancia()
     else:
         invalid()
@@ -477,7 +481,7 @@ def j1_1():
     "abraçar a verdade",
     "ignorância abençoada"
     )
-    if decisao == 1: todos()
+    if decisao == 1: todos_2("você")
     elif decisao == 2: ignorancia()
     else:
         invalid()
