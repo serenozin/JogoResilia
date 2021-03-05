@@ -6,7 +6,7 @@ mais avançados, o desafio de fazer tudo com o básico do Python me ajudou a apr
 e no funcionamento das funções básicas da linguagem, sedimentando os conhecimentos socializados
 pelas facilitadoras e pelo monitor.
 
-<img src="https://github.com/serenozin/JogoResilia/blob/main/capa.png">
+<img src="https://raw.githubusercontent.com/serenozin/JogoResilia/main/capa.png">
 # TEJUCUPAPO
 Estamos na comunidade de Tejucupapo, a comunidade já perdeu 2 anciãs 
 para o novo vírus que circula pelo mundo. E nessa semana chegaram as vacinas 
@@ -48,7 +48,7 @@ Para começar é só clicar no ícone de play abaixo.
 
 ### Fluxograma dos caminhos possíveis 
 Se não jogou ainda vai lá brincar, aqui contém spoilers.
-<img src="https://github.com/serenozin/JogoResilia/blob/main/fluxograma.jpg">
+<img src="https://raw.githubusercontent.com/serenozin/JogoResilia/main/fluxograma.jpg">
 
 ## CONFIRA OS OUTROS PROJETOS DO NOSSO GRUPO 
 
