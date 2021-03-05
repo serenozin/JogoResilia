@@ -19,8 +19,7 @@ def inicio():
     disso há um tempo, e resolveu compartilhar sua teoria com suas amigas 
     Sandino, a ativista; e Jurema, a encantada. Para você ganhar o jogo a 
     comunidade precisa ter acesso integral à vacina. Incluencie o grupo para
-    tomar as melhores decisões, que lhe levarão à vitória.
-    """)
+    tomar as melhores decisões, que lhe levarão à vitória.""")
 
         menu_iniciar = int(input(f"""
     {"="*80}
@@ -52,15 +51,13 @@ def invalid():
     print(f"""
     {"="*80} 
     {"="*25} Opção inválida. Tente novamente {"="*24}
-    {"="*80} 
-    """)
+    {"="*80}""")
 
 def game_over():
     print(f"""
     {"="*80} 
-    {"="*35} GAME OVER {"="*36}
-    {"="*80} 
-    """)
+    {"="*34} GAME OVER {"="*35}
+    {"="*80}""")
 
 def win():
     print(f"""
@@ -175,31 +172,98 @@ def decisao_2_2():
     )
     return decisao
 
-def trabalhadoras():
-    """ vacinas só para trabalhadoras(es) """
+def trabalhadoras_1():
+    """ VITÓRIA: vacinas só para trabalhadoras(es) """
     win()
-    pass
-def todos():
-    """ vacinas para todo mundo """
-    win()
-    pass
-def perde_apoio():
-    """ perder o apoio popular """
-    game_over()
-    pass
-def alianca():
-    """ aliança com os coroneis """
-    game_over()
-    pass
-def morre():
-    """ o grupo morrer """
-    game_over()
-    pass
-def ignorancia():
-    """ ignorância """
-    game_over()
+    print(f"""
+    Vocês vão no Memorial das Heróina de Tejucupapo buscar sabedoria. E decidem
+    pegar as armas em exposição para conseguir pegar as vacinas de volta. Vocês
+    vão até o latifúndio do Palhaço, rendem os capangas, e conseguem levar as 
+    vacinas. 
+    Você ganhou, as trabalhadoras e trabalhadores terão acesso à vacina
+    de verdade. Com excessão dos aliados dos coronéis, que não são
+    trabalhadores.
+    {"="*80}""")
+    inicio()
 
-    pass
+def trabalhadoras_2():
+    """ VITÓRIA: vacinas só para trabalhadoras(es) """
+    win()
+    print(f"""
+    Vocês contam só pra algumas poucas pessoas, pra ajudaram vocês à pensar. Marcam
+    uma reunião no Memorial das Heroínas de Tejucupapo. Lá vocês decidem pegar as 
+    armas em exposição para conseguir pegar as vacinas de volta. Vocês vão até 
+    o latifúndio do Palhaço, rendem os capangas, e conseguem levar as vacinas. 
+    Você ganhou, as trabalhadoras e trabalhadores terão acesso à vacina
+    de verdade. Com excessão dos aliados dos coronéis, que não são
+    trabalhadores.
+    {"="*80}""")
+    inicio()
+
+def todos_1():
+    """ VITÓRIA: vacinas para todo mundo """
+    win()
+    print(f"""
+    Você vai atrás de Jurema e Sandino. A vizinha diz que elas foram para a banda 
+    dos latifúndios. Você vai correndo, ao chegar lá vê Jurema se transformar na
+    Cumdade Fulôzinha na frente de todos, os capangas ficam encantados. Você e 
+    Sandino conseguem pegar as vacinas, e vocês todas saem salvas levando as 
+    vacinas.
+    Você ganhou, a comunidade inteira terá acesso à vacina de verdade.
+    {"="*80}""")
+    inicio()
+
+def todos_2():
+    """ VITÓRIA: vacinas para todo mundo """
+    win()
+    print(f"""
+    
+    Você ganhou, a comunidade inteira terá acesso à vacina de verdade.
+    {"="*80}""")
+    inicio()
+
+def perde_apoio():
+    """ DERROTA: perder o apoio popular """
+    game_over()
+    print(f"""
+    A teoria se espalhou como uma fofoca, mas os aliados foram mais rápidos e 
+    transformaram a narrativa com notícias falsas. Ao ver o confronto a
+    a população, com medo, acreditou nos aliados.
+    Você perdeu, a população vai continuar recebendo placebo.
+    {"="*80}""")
+    inicio()
+
+def alianca():
+    """ DERROTA: aliança com os coroneis """
+    game_over()
+    print(f"""
+    Vocês convocam a assembléia da comunidade. Mas os aliados dos coronéis contornam 
+    a situação. A população, com medo, concorda em dialogar com os coronéis. E é 
+    firmada uma aliança com os coronéis para dá vacinas para a comunidade.
+    Você perdeu, a população vai continuar recebendo placebo.
+    {"="*80}""")
+    inicio()
+
+def morre():
+    """ DERROTA: o grupo morre """
+    game_over()
+    print(f"""
+    Vocês tentam pegar as vacinas de volta. Mas o capangas dos coronéis pegam vocês
+    no flagra, e matam vocês.
+    Você perdeu, a população vai continuar recebendo placebo.
+    {"="*80}""")
+    inicio()
+
+def ignorancia():
+    """ DERROTA: ignorância """
+    game_over()
+    print(f"""
+    De repente tudo passa e vocês concluem que nada está acontecendo. Ligam 
+    para Fátima e dizem que sua teoria não faz sentido. 
+    Você perdeu, a população vai continuar recebendo placebo.
+    {"="*80}""")
+    inicio()
+
 #---------------------------------------------------------------ENREDO DE FÁTIMA
 def f0():
     texto("""
@@ -236,7 +300,7 @@ def f2_1():
 
 def f2_2():
     decisao = decisao_2_2()
-    if decisao == 1: trabalhadoras()
+    if decisao == 1: trabalhadoras_1()
     elif decisao == 2: morre()
     else:
         invalid()
@@ -319,7 +383,7 @@ def s2_1():
 
 def s2_2():
     decisao = decisao_2_2()
-    if decisao == 1: trabalhadoras()
+    if decisao == 1: trabalhadoras_1()
     elif decisao == 2: morre()
     else:
         invalid()
@@ -354,7 +418,7 @@ def s1_1():
 def s1_2():
     decisao = decisao_1_2
     
-    if decisao == 1: trabalhadoras()
+    if decisao == 1: trabalhadoras_2()
     elif decisao == 2: perde_apoio()
     else:
         invalid()
@@ -388,7 +452,7 @@ def j2_1():
 
 def j2_2():
     decisao = decisao_2_2()
-    if decisao == 1: trabalhadoras()
+    if decisao == 1: trabalhadoras_1()
     elif decisao == 2: morre()
     else:
         invalid()
@@ -421,7 +485,7 @@ def j1_1():
 
 def j1_2():
     decisao = decisao_1_2()
-    if decisao == 1: trabalhadoras()
+    if decisao == 1: trabalhadoras_2()
     elif decisao == 2: perde_apoio()
     else:
         invalid()
