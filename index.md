@@ -1,13 +1,21 @@
-## Sobre o projeto:
+# TEJUCUPAPO
+### Sobre o projeto:
 Esse é o projeto final do módulo 1 da [Turma VamoAI](https://github.com/serenozin/turmaVamoAi),
 projeto do IFood, em parceria com a Resilia. O desafio foi escrever um jogo em Python,
 só com o que foi passado no primeiro módulo. Então apesar de eu já ter explorado recursos
 mais avançados, o desafio de fazer tudo com o básico do Python me ajudou a aprofundar na lógica de programação, 
 e no funcionamento das funções básicas da linguagem, sedimentando os conhecimentos socializados
-pelas facilitadoras e pelo monitor.
+pelas facilitadoras e pelo monitor. Eu realizei o projeto junto com a equipe 6(
+[Gabriela Turquetti](https://www.linkedin.com/in/gabriela-turquetti/), 
+[Diego Souza](https://github.com/D20go), e 
+[Thiago Farias](https://www.linkedin.com/in/thiagosilvafarias/)). 
+E desde já agradeço ao processo muito rico com a equipe, ás facilitadoras 
+[Letícia](https://www.linkedin.com/in/leticiasilvar/) e 
+[Laís](https://www.linkedin.com/in/laisbrandaonunes/) 
+e ao monitor [Ruberth](https://www.linkedin.com/in/ruberth/) pelas didáticas e atenção.  
+
 
 <img src="https://raw.githubusercontent.com/serenozin/JogoResilia/main/capa.png">
-# TEJUCUPAPO
 Estamos na comunidade de Tejucupapo, a comunidade já perdeu 2 anciãs 
 para o novo vírus que circula pelo mundo. E nessa semana chegaram as vacinas 
 suficientes para imunizar 70% da população do local. Mas os coronéis 
@@ -19,27 +27,23 @@ comunidade precisa ter acesso integral à vacina. Incluencie o grupo para
 tomar as melhores decisões, que lhe levarão à vitória.
 
 ### Personagens 
-
 - Fátima
 - Sandino
 - Jurema
 
 ### Cenários:
-
-- Hospital Elizabete Altino Teixeira
+- Hospital [Elizabete Altino Teixeira](https://pt.wikipedia.org/wiki/Elizabeth_Altino_Teixeira)
 - Quintal da Jurema
-- Memorial das Heroínas de Tejucupapo
+- Memorial das [Heroínas de Tejucupapo](https://pt.wikipedia.org/wiki/Batalha_de_Tejucupapo)
 
 ### Condições de Vitória: 
-
-- Apenas trabalhadoras e trabalhadores terem acesso à vacina
-- Todos da comunidade terem acesso às vacinas, inclusive os não trabalhadores aliados  dos coronéis
+- Apenas a classe trabalhadora ter acesso à vacina
+- Todos da comunidade terem acesso às vacinas
 
 ### Condições de Derrota: 
-
-- Aderir à ignorância
 - Perder o apoio popular
 - Aliança com os coronéis
+- Aderir à ignorância
 - Morrer
 
 ### Bora brincar?!
