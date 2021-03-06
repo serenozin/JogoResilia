@@ -5,8 +5,7 @@ projeto do IFood, em parceria com a Resilia. O desafio foi escrever um jogo em P
 só com o que foi passado no primeiro módulo. Então apesar de eu já ter explorado recursos
 mais avançados, o desafio de fazer tudo com o básico do Python me ajudou a aprofundar na lógica de programação, 
 e no funcionamento das funções básicas da linguagem, sedimentando os conhecimentos socializados
-pelas facilitadoras e pelo monitor. Eu realizei o projeto junto com a equipe 6(
-[Gabriela Turquetti](https://www.linkedin.com/in/gabriela-turquetti/), 
+pelas facilitadoras e pelo monitor. Eu realizei o projeto junto com a equipe 6 ([Gabriela Turquetti](https://www.linkedin.com/in/gabriela-turquetti/), 
 [Diego Souza](https://github.com/D20go), e 
 [Thiago Farias](https://www.linkedin.com/in/thiagosilvafarias/)). 
 E desde já agradeço ao processo muito rico com a equipe, ás facilitadoras 
