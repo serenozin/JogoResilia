@@ -14,7 +14,7 @@ E desde já agradeço ao processo muito rico com a equipe, ás facilitadoras
 e ao monitor [Ruberth](https://www.linkedin.com/in/ruberth/) pelas didáticas e atenção.  
 
 
-<img src="https://raw.githubusercontent.com/serenozin/JogoResilia/main/capa.png">
+<img align="center" src="https://raw.githubusercontent.com/serenozin/JogoResilia/main/capa.png">
 Estamos na comunidade de Tejucupapo, a comunidade já perdeu 2 anciãs 
 para o novo vírus que circula pelo mundo. E nessa semana chegaram as vacinas 
 suficientes para imunizar 70% da população do local. Mas os coronéis 
