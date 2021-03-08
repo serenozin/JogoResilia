@@ -49,7 +49,7 @@ tomar as melhores decisões, que lhe levarão à vitória.
 
 ### Bora brincar?!
 Para começar é só clicar no ícone de play abaixo.
-<iframe height="800px" width="100%" src="https://repl.it/@serenozin/JogoResilia?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<iframe height="600px" width="600px" src="https://repl.it/@serenozin/JogoResilia?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
 ### Fluxograma dos caminhos possíveis 
 Se não jogou ainda vai lá brincar, aqui contém spoilers.
